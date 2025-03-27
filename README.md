@@ -1,4 +1,6 @@
-🛂 <h1>**Ecommerce ETL Pipeline</h1>
+🛂 <h2>Ecommerce ETL Pipeline</h2>
+
+<p font-size:20px>
 
 📌 **Project Overview**
 
@@ -86,16 +88,16 @@ This pipeline is built using industry-standard tools and frameworks:
 
 
 📌 Summary
+            
+            ✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.
+            
+            ✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.
+            
+            ✔ Scalable & Reliable: Handles large-scale data processing with PySpark and Google Cloud.
+            
+            ✔ Airflow Orchestration: Schedules, monitors, and automates ETL workflows.
+            
+            ✔ Cloud & Docker Integration: Enables easy deployment and scalability.
 
-✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.
-
-✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.
-
-✔ Scalable & Reliable: Handles large-scale data processing with PySpark and Google Cloud.
-
-✔ Airflow Orchestration: Schedules, monitors, and automates ETL workflows.
-
-✔ Cloud & Docker Integration: Enables easy deployment and scalability.
-
-
+</p>
 
