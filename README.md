@@ -1,92 +1,74 @@
-
-
-🛒 Ecommerce ETL Pipeline
-
-An end-to-end ETL pipeline for an Ecommerce business, built using Apache Airflow, PySpark, PostgreSQL, and Delta Lake.
+🛂 Ecommerce ETL Pipeline
 
 📌 Project Overview
 
-This pipeline automates the extraction, transformation, and loading (ETL) of ecommerce data, including customers, products, orders, and transactions.
+The Ecommerce ETL Pipeline is an end-to-end data processing pipeline designed for ecommerce businesses. It automates the Extraction, Transformation, and Loading (ETL) of ecommerce data, such as customers, products, orders, and transactions, using a scalable and reliable architecture.
 
-Workflow Diagram
+📊 Workflow Diagram
 
-Below is a high-level view of how the pipeline processes data:
+A high-level diagram illustrating the pipeline’s architecture. (Replace with your own image)
 
- (Replace with your own image)
+⚡ Technology Stack
 
-Technology Stack
+This pipeline is built using industry-standard tools and frameworks:
 
 Apache Airflow – Orchestrates ETL workflows.
 
-PySpark – Processes large-scale data.
+PySpark – Handles large-scale data processing.
 
-PostgreSQL – Stores structured data.
+PostgreSQL – Stores structured data for analytics.
 
-Delta Lake – Optimized data storage format.
+Delta Lake – Provides optimized data storage.
 
 Google Cloud Storage – Stores raw and processed data.
 
-Docker – Containerizes the pipeline for deployment.
+Docker – Ensures a scalable and containerized deployment.
 
 🚀 Features
 
-✔ Automated DAGs in Apache Airflow✔ Data Cleaning & Transformations using PySpark✔ Delta Format Storage for efficient querying✔ Scalable architecture with Docker & cloud integration✔ Data validation & logging for debugging
+✔ Automated ETL Workflows with Apache Airflow✔ Scalable Data Processing with PySpark✔ Optimized Storage using Delta Lake for fast querying✔ Seamless Cloud Integration with Google Cloud✔ Containerized Deployment using Docker✔ Comprehensive Data Validation and Logging
 
-🔄 How It Works?
+🔄 ETL Process Explanation
 
-Step 1: Data Extraction (Extract - "E" in ETL)
+This pipeline follows a structured ETL (Extract, Transform, Load) process using PySpark:
 
-The pipeline begins by extracting raw data from different sources.
+Step 1: Data Extraction (E in ETL)
 
-Data includes customers, products, orders, and transactions in JSON format.
+The pipeline extracts raw data from JSON files stored in Google Cloud Storage or local directories.
 
-The pipeline reads this data from Google Cloud Storage (or local files) into PySpark for further processing.
+Data sources include customers, products, orders, and transactions.
 
-This step ensures that all necessary data is collected before transformations.
+Step 2: Data Cleaning & Transformation (T in ETL)
 
-Step 2: Data Cleaning & Transformation (Transform - "T" in ETL)
+Raw data is cleaned to handle missing values, duplicates, and inconsistencies.
 
-Once the raw data is extracted, the next step is to clean and structure it:
+Data transformation ensures format consistency (e.g., standardizing column names, converting data types).
 
-Removing duplicates and handling missing values.
+Orders are enriched by joining them with transactions to include financial details.
 
-Standardizing column names and formats for consistency.
+Step 3: Data Loading (L in ETL)
 
-Joining datasets to create a structured format for analysis.
-
-Applying business rules such as calculating total sales per order.
-
-The transformed data is then stored in an optimized Delta Lake format for fast processing.
-
-Step 3: Data Loading (Load - "L" in ETL)
-
-After transformation, the cleaned data is loaded into PostgreSQL for storage and analysis.
-
-The pipeline inserts the structured data into PostgreSQL tables for reporting and querying.
-
-Historical data is stored efficiently in Delta Lake for future analysis.
-
-This ensures fast retrieval and scalability of ecommerce data.
+The cleaned and transformed data is stored in Delta Lake and PostgreSQL for analysis and reporting.
 
 Step 4: Workflow Orchestration (Apache Airflow DAGs)
 
-The entire ETL process is automated and scheduled using Apache Airflow.
+The ETL process is automated with Apache Airflow DAGs.
 
-Airflow DAGs (Directed Acyclic Graphs) define the order of tasks (Extract → Transform → Load).
+Defines task dependencies (Extract → Transform → Load).
 
-It ensures the pipeline runs on schedule (e.g., daily) or on-demand.
+Scheduled to run daily or on-demand.
 
-Logging and monitoring help track failures and debug issues in the ETL process.
+Logging and monitoring enable debugging and tracking.
 
-Step 5: Scalable Deployment with Docker & Cloud Integration
+Step 5: Scalable Deployment with Docker & Cloud
 
-The pipeline is containerized using Docker, making it easy to deploy.
+Docker containerizes the entire pipeline for easy deployment.
 
-Data is stored and processed on Google Cloud, allowing scalability.
+Google Cloud Storage ensures scalability and reliability.
 
-This setup allows for distributed data processing and real-time analytics.
+Distributed data processing allows real-time analytics.
 
-📂 Project Structure
+💀 Project Structure
 
 Ecommerce-ETL-Pipeline/
 │-- dags/                    # Airflow DAGs (workflow definitions)
@@ -128,30 +110,32 @@ Google Cloud SDK (if using cloud storage)
 
 Installation Steps
 
-Clone the repository:
+1. Clone the Repository
 
 git clone https://github.com/your-username/Ecommerce-ETL-Pipeline.git
 cd Ecommerce-ETL-Pipeline
 
-Set up a virtual environment and install dependencies:
+2. Set Up a Virtual Environment & Install Dependencies
 
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-Start the pipeline using Docker:
+3. Start the Pipeline Using Docker
 
 docker-compose up -d
 
-Access Airflow UI:
+4. Access Apache Airflow UI
 
-Open a browser and go to http://localhost:8080
+Open a browser and navigate to http://localhost:8080
 
-Login with Airflow credentials and enable the DAG
+Log in with your Airflow credentials
+
+Enable the DAG to start the ETL process
 
 📌 Summary
 
-✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.✔ Scalable & Reliable: Supports large-scale data processing with PySpark and Google Cloud.✔ Airflow Orchestration: Ensures scheduling, monitoring, and automation of ETL workflows.✔ Cloud & Docker Integration: Deployable in a scalable and flexible environment.
+✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.✔ Scalable & Reliable: Handles large-scale data processing with PySpark and Google Cloud.✔ Airflow Orchestration: Schedules, monitors, and automates ETL workflows.✔ Cloud & Docker Integration: Enables easy deployment and scalability.
 
-🚀 This pipeline helps ecommerce businesses manage, analyze, and optimize their data efficiently!
+🚀 This pipeline empowers ecommerce businesses to efficiently manage, analyze, and optimize their data!
 
