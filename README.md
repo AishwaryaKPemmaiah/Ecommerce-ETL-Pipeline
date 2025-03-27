@@ -1,4 +1,4 @@
-🛂 <h2>Ecommerce ETL Pipeline</h2>
+<h2>🛂Ecommerce ETL Pipeline</h2>
 
 <p font-size:20px>
 
