@@ -22,60 +22,61 @@ This pipeline is built using industry-standard tools and frameworks:
             Docker – Ensures a scalable and containerized deployment.
             
 
-🚀 **Features**
+⚡**Features**
 
-✔ Automated ETL Workflows with Apache Airflow
-
-✔ Scalable Data Processing with PySpark
-
-✔ Optimized Storage using Delta Lake for fast querying
-
-✔ Seamless Cloud Integration with Google Cloud
-
-✔ Containerized Deployment using Docker
-
-✔ Comprehensive Data Validation and Logging
+            ✔ Automated ETL Workflows with Apache Airflow
+            
+            ✔ Scalable Data Processing with PySpark
+            
+            ✔ Optimized Storage using Delta Lake for fast querying
+            
+            ✔ Seamless Cloud Integration with Google Cloud
+            
+            ✔ Containerized Deployment using Docker
+            
+            ✔ Comprehensive Data Validation and Logging
+            
 
 
 🔄 **ETL Process Explanation**
-
-This pipeline follows a structured ETL (Extract, Transform, Load) process using PySpark:
-
-Step 1: Data Extraction (E in ETL)
-
-The pipeline extracts raw data from JSON files stored in Google Cloud Storage or local directories.
-
-Data sources include customers, products, orders, and transactions.
-
-Step 2: Data Cleaning & Transformation (T in ETL)
-
-Raw data is cleaned to handle missing values, duplicates, and inconsistencies.
-
-Data transformation ensures format consistency (e.g., standardizing column names, converting data types).
-
-Orders are enriched by joining them with transactions to include financial details.
-
-Step 3: Data Loading (L in ETL)
-
-The cleaned and transformed data is stored in Delta Lake and PostgreSQL for analysis and reporting.
-
-Step 4: Workflow Orchestration (Apache Airflow DAGs)
-
-The ETL process is automated with Apache Airflow DAGs.
-
-Defines task dependencies (Extract → Transform → Load).
-
-Scheduled to run daily or on-demand.
-
-Logging and monitoring enable debugging and tracking.
-
-Step 5: Scalable Deployment with Docker & Cloud
-
-Docker containerizes the entire pipeline for easy deployment.
-
-Google Cloud Storage ensures scalability and reliability.
-
-Distributed data processing allows real-time analytics.
+            
+ This pipeline follows a structured ETL (Extract, Transform, Load) process using PySpark:
+            
+            **Step 1: Data Extraction**
+            
+                        The pipeline extracts raw data from JSON files stored in Google Cloud Storage or local directories.
+                        
+                        Data sources include customers, products, orders, and transactions.
+            
+            **Step 2: Data Cleaning & Transformation**
+            
+                        Raw data is cleaned to handle missing values, duplicates, and inconsistencies.
+                        
+                        Data transformation ensures format consistency (e.g., standardizing column names, converting data types).
+                        
+                        Orders are enriched by joining them with transactions to include financial details.
+            
+            **Step 3: Data Loading** 
+            
+                        The cleaned and transformed data is stored in Delta Lake and PostgreSQL for analysis and reporting.
+            
+            **Step 4: Workflow Orchestration (Apache Airflow DAGs)**
+                        
+                        The ETL process is automated with Apache Airflow DAGs.
+                        
+                        Defines task dependencies (Extract → Transform → Load).
+                        
+                        Scheduled to run daily or on-demand.
+                        
+                        Logging and monitoring enable debugging and tracking.
+            
+            **Step 5: Scalable Deployment with Docker & Cloud**
+                        
+                        Docker containerizes the entire pipeline for easy deployment.
+                        
+                        Google Cloud Storage ensures scalability and reliability.
+                        
+                        Distributed data processing allows real-time analytics.
 
 💀 Project Structure
 
@@ -96,5 +97,5 @@ Distributed data processing allows real-time analytics.
 
 ✔ Cloud & Docker Integration: Enables easy deployment and scalability.
 
-🚀 This pipeline empowers ecommerce businesses to efficiently manage, analyze, and optimize their data
+
 
