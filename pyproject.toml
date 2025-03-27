@@ -1,0 +1,12 @@
+
+[tool.poetry]
+name = "ecommerce-etl-pipeline"
+version = "0.1.0"
+description = "Ecommerce ETL Pipeline with Airflow, PySpark, and Delta Lake"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyspark = "^3.2.1"
+apache-airflow = "^2.5.0"
+delta-spark = "^1.0.0"
