@@ -26,7 +26,17 @@ Docker – Ensures a scalable and containerized deployment.
 
 🚀 Features
 
-✔ Automated ETL Workflows with Apache Airflow✔ Scalable Data Processing with PySpark✔ Optimized Storage using Delta Lake for fast querying✔ Seamless Cloud Integration with Google Cloud✔ Containerized Deployment using Docker✔ Comprehensive Data Validation and Logging
+✔ Automated ETL Workflows with Apache Airflow
+
+✔ Scalable Data Processing with PySpark
+
+✔ Optimized Storage using Delta Lake for fast querying
+
+✔ Seamless Cloud Integration with Google Cloud
+
+✔ Containerized Deployment using Docker
+
+✔ Comprehensive Data Validation and Logging
 
 🔄 ETL Process Explanation
 
@@ -135,7 +145,15 @@ Enable the DAG to start the ETL process
 
 📌 Summary
 
-✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.✔ Scalable & Reliable: Handles large-scale data processing with PySpark and Google Cloud.✔ Airflow Orchestration: Schedules, monitors, and automates ETL workflows.✔ Cloud & Docker Integration: Enables easy deployment and scalability.
+✔ Automated Data Pipeline: Extracts, transforms, and loads ecommerce data seamlessly.
+
+✔ Optimized Storage: Uses PostgreSQL for structured data and Delta Lake for historical data.
+
+✔ Scalable & Reliable: Handles large-scale data processing with PySpark and Google Cloud.
+
+✔ Airflow Orchestration: Schedules, monitors, and automates ETL workflows.
+
+✔ Cloud & Docker Integration: Enables easy deployment and scalability.
 
 🚀 This pipeline empowers ecommerce businesses to efficiently manage, analyze, and optimize their data!
 
