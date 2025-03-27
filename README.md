@@ -1,30 +1,28 @@
-🛂 Ecommerce ETL Pipeline
+🛂 **Ecommerce ETL Pipeline**
 
-📌 Project Overview
+📌 **Project Overview**
 
 The Ecommerce ETL Pipeline is an end-to-end data processing pipeline designed for ecommerce businesses. It automates the Extraction, Transformation, and Loading (ETL) of ecommerce data, such as customers, products, orders, and transactions, using a scalable and reliable architecture.
 
-📊 Workflow Diagram
 
-A high-level diagram illustrating the pipeline’s architecture. (Replace with your own image)
-
-⚡ Technology Stack
+⚡ **Technology Stack**
 
 This pipeline is built using industry-standard tools and frameworks:
 
-Apache Airflow – Orchestrates ETL workflows.
+            Apache Airflow – Orchestrates ETL workflows.
+            
+            PySpark – Handles large-scale data processing.
+            
+            PostgreSQL – Stores structured data for analytics.
+            
+            Delta Lake – Provides optimized data storage.
+            
+            Google Cloud Storage – Stores raw and processed data.
+            
+            Docker – Ensures a scalable and containerized deployment.
+            
 
-PySpark – Handles large-scale data processing.
-
-PostgreSQL – Stores structured data for analytics.
-
-Delta Lake – Provides optimized data storage.
-
-Google Cloud Storage – Stores raw and processed data.
-
-Docker – Ensures a scalable and containerized deployment.
-
-🚀 Features
+🚀 **Features**
 
 ✔ Automated ETL Workflows with Apache Airflow
 
@@ -38,7 +36,8 @@ Docker – Ensures a scalable and containerized deployment.
 
 ✔ Comprehensive Data Validation and Logging
 
-🔄 ETL Process Explanation
+
+🔄 **ETL Process Explanation**
 
 This pipeline follows a structured ETL (Extract, Transform, Load) process using PySpark:
 
@@ -80,68 +79,10 @@ Distributed data processing allows real-time analytics.
 
 💀 Project Structure
 
-Ecommerce-ETL-Pipeline/
-│-- dags/                    # Airflow DAGs (workflow definitions)
-│   ├── ecommerce_etl_dag.py
-│-- src/                     # Source code for ETL processing
-│   ├── etl_pipeline.py      # Main ETL pipeline logic
-│   ├── data_cleaning.py     # Data cleaning scripts
-│   ├── transformations.py   # Data transformation scripts
-│-- config/                  # Configuration files
-│   ├── database_config.py   # Database connection settings
-│   ├── spark_config.py      # Spark configuration settings
-│-- data/                    # Raw and processed data
-│   ├── customers.json
-│   ├── products.json
-│   ├── orders.json
-│   ├── transactions.json
-│-- notebooks/               # Jupyter notebooks for analysis
-│   ├── analysis.ipynb
-│-- logs/                    # Logs generated from the pipeline
-│-- docker-compose.yml       # Docker configuration
-│-- README.md                # Project documentation
-│-- requirements.txt         # Dependencies
+![image](https://github.com/user-attachments/assets/bc0852f2-723b-4874-b1f5-4741b856694c)
 
-⚙️ Setup & Installation
 
-Prerequisites
 
-Ensure you have the following installed:
-
-Docker
-
-Apache Airflow
-
-Python 3.x
-
-PostgreSQL
-
-Google Cloud SDK (if using cloud storage)
-
-Installation Steps
-
-1. Clone the Repository
-
-git clone https://github.com/your-username/Ecommerce-ETL-Pipeline.git
-cd Ecommerce-ETL-Pipeline
-
-2. Set Up a Virtual Environment & Install Dependencies
-
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-3. Start the Pipeline Using Docker
-
-docker-compose up -d
-
-4. Access Apache Airflow UI
-
-Open a browser and navigate to http://localhost:8080
-
-Log in with your Airflow credentials
-
-Enable the DAG to start the ETL process
 
 📌 Summary
 
@@ -155,5 +96,5 @@ Enable the DAG to start the ETL process
 
 ✔ Cloud & Docker Integration: Enables easy deployment and scalability.
 
-🚀 This pipeline empowers ecommerce businesses to efficiently manage, analyze, and optimize their data!
+🚀 This pipeline empowers ecommerce businesses to efficiently manage, analyze, and optimize their data
 
